@@ -9,6 +9,7 @@ def safe_print_integer(value):
     Returns:
         A boolean
     """
+
     try:
         print("{:d}".format(value))
         return (True)
