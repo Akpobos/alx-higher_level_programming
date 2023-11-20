@@ -6,7 +6,7 @@ def safe_print_integer(value):
     Args:
         value (any): can be any type (integer, string, etc.)
 
-    Return:
+    Returns:
         A boolean
     """
     try:
