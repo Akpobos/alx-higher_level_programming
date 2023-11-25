@@ -1,0 +1,64 @@
+The ``2-matrix_divided`` module
+===============================
+
+Using ``matrix_divided``
+------------------------
+
+Import ``matrix_divided`` function from the module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Chaeck empty parameters:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Define the matrix:
+    >>> matrix = []
+
+Check 1 dimensional empty list:
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+Passing other type apart from list type:
+    >>> matrix_divided(23, 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Passing other type apart from list type:
+    >>> matrix_divided([1, 2, 4], 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Redefine matrix:
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+
+Passing matrix without div:
+    >>> matrix_divided(matrix)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Passing matrix with invalid div type:
+    >>> matrix_divided(matrix, '3')
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
+
+Passing matrix with div value as 0:
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
+Running ``matrix_divided`` with correct input:
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+
+
