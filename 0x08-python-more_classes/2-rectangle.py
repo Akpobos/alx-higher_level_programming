@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""A Rectangle module"""
+""" A Rectangle module"""
 
 class Rectangle:
-    """A rectangle class"""
+    """ A rectangle class"""
     def __init__(self, width = 0, height = 0):
         """Constructor Function
         Args:
