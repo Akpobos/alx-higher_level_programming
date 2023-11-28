@@ -2,5 +2,5 @@
 """Rectangle Module"""
 
 class Rectangle:
-    """A Rectangle class"""
+    """Class that defines a Rectangle"""
     pass
