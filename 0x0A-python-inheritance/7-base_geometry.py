@@ -4,7 +4,7 @@
 
 class BaseGeometry:
     """The Base class for a Geometry"""
-    
+
     def area(self):
         """Computes the area of the geometry
         Raises:
@@ -14,10 +14,12 @@ class BaseGeometry:
     
     def integer_validator(self, name, value):
         """Validates a value
+
         Args:
             name (str): name of the value
             value (int): The value
         Raises:
+
             TypeError: if value is not an integer
             ValueError: if value is <= 0
         """
