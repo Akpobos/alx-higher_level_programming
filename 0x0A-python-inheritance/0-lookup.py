@@ -2,10 +2,5 @@
 """Module containing lookup"""
 
 def lookup(obj):
-    """function that returns the list of available attributes
-    and methods of an object
-    Args:
-        obj (object): The object
-    Return: A list of attributes
-    """
+    """returns the list of available attributes"""
     return (dir(obj))
